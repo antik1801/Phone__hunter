@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Bazar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <div class="mt-5 mb-3">
+        <h1 class="text-center">Phone Bazar</h1>
+    </div>
+    <section class="mb-5 d-flex justify-content-center gap-5">
+        <div class="w-50">
+            <input type="text" class="form-control" placeholder="Search your phone" id="search-input">
+        </div>
+        <div>
+            <button class="btn btn-success" id="btn-search">Search</button>
+        </div>
+    </section>
+    <!-- Phones container Starts -->
+    <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="phones-container">
+          </div>
+    </section>
+    <!-- Phones container Ends  -->
+    <section id="no-phone" class="d-none">
+        <div>
+            <h1 class="text-warning">No phone found. Please try again.</h1>
+        </div>
+    </section>
+    <!-- spinner Add  -->
+    <section >
+        <div style="height: 50vh;" class="d-flex justify-content-center align-items-center" id="spinner">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+    </section>
+
+    <!-- Javascript Sources  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./practise-js.js"></script>
+  </body>
+</html>
